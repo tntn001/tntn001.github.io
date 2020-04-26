@@ -60,6 +60,7 @@ const aboutMeStyle = {
     marginTop: 100,
     marginLeft: 170,
     maxWidth: 600,
+    minWidth: 400,
     position: "absolute",
     textAlign: "justify",
     paddingTop: 5,
@@ -87,8 +88,10 @@ const containerStyle = {
 };
 
 const nameStyle = {
-    marginTop: 10,
-    marginRight: 20
+    paddingTop: 10,
+    paddingRight: 20,
+    height: 100,
+    background: colorLightBlue
 };
 
 

@@ -18,10 +18,14 @@ export default class ImageViewer extends React.Component {
             this.listViewImage.push
                 (<Img src={listImage[i]}
                     width={defaultWidth}
+                    height={defaultWidth}
                     style={{
                         marginRight: 20,
                         marginBottom: 20,
-                        borderStyle: "groove"
+                        borderStyle: "groove",
+                        backgroundPosition: "center center",
+                        backgroundSize: "cover",
+                        overflow: "hidden"
                     }}
                     onClick={() => this.imageClick()} />);
         }
