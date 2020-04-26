@@ -3,6 +3,11 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+var siteWidth = 650;
+var scale = Screen.width / siteWidth
+
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=' + siteWidth + ', initial-scale=' + scale + '');
+
 ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change

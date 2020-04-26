@@ -13,6 +13,7 @@
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
+    "react-burger-menu": "^2.6.13",
     "react-dom": "^16.13.1",
     "react-fullscreen-image": "0.0.3",
     "react-image": "^2.4.0",

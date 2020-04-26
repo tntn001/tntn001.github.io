@@ -23,9 +23,18 @@ function groupInfo() {
                 position: "absolute",
                 left: 0,
                 right: 0,
+                height: 100,
+                minWidth: 600,
                 display: "flex",
                 background: colorLightBlue,
-                justifyContent: "center"
+
+            }} />
+            <div style={{
+                zIndex: -1,
+                position: "absolute",
+                left: 100,
+                display: "flex",
+                background: colorLightBlue,
 
             }}>
                 <img height={100} src={catGif} />
@@ -75,8 +84,7 @@ const panelStyle = {
     left: 0,
     right: 0,
     height: 200,
-    zIndex: -1
-
+    zIndex: -1,
 };
 
 
@@ -85,13 +93,14 @@ const containerStyle = {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
+
 };
 
 const nameStyle = {
     paddingTop: 10,
     paddingRight: 20,
     height: 100,
-    background: colorLightBlue
+
 };
 
 

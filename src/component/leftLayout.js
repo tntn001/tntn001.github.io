@@ -15,7 +15,6 @@ import strs from "../stringDefine"
 
 const infoStyle = {
     padding: 10,
-
     display: "flex",
     flexDirection: "row",
     marginLeft: 10,
@@ -55,7 +54,8 @@ function TitleInfo() {
 function InfoGroup() {
     return (
         <div style={{ display: "flex", flexDirection: "column" }}>
-            <img src={IconPin} width={50} style={{ marginTop: 20, alignSelf: "center" }} />
+            <img src={IconPin} width={50}
+                style={{ marginTop: 20, alignSelf: "center", zIndex: 1 }} />
             <div style={groupStyle}>
                 {TitleInfo()}
                 <a style={infoStyle}>
@@ -110,7 +110,8 @@ function TitleCareerInfo() {
 function CareerObjectiveGroup() {
     return (
         <div style={{ display: "flex", flexDirection: "column" }}>
-            <img src={IconPin} width={50} style={{ marginTop: 20, alignSelf: "center" }} />
+            <img src={IconPin} width={50}
+                style={{ marginTop: 20, alignSelf: "center", zIndex: 1 }} />
             <div style={groupStyle}>
 
                 {TitleCareerInfo()}
@@ -132,7 +133,9 @@ function TitleHobbiesInfo() {
 function HobbiesGroup() {
     return (
         <div style={{ display: "flex", flexDirection: "column" }}>
-            <img src={IconPin} width={50} style={{ marginTop: 20, alignSelf: "center" }} />
+            <img src={IconPin} width={50}
+                style={{ marginTop: 20, alignSelf: "center", zIndex: 1 }}
+            />
             <div style={groupStyle}>
                 {TitleHobbiesInfo()}
                 <ul>
@@ -154,7 +157,7 @@ const groupStyle = {
     maxWidth: 300,
     minWidth: 300,
     flex: 1,
-    zIndex: -1,
+    zIndex: 0,
     borderRadius: 5,
     background: colorPanel,
     boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
