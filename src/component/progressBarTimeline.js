@@ -14,14 +14,19 @@ export default class ProgressBarTimeline extends React.Component {
         list.push(list[list.length - 1])
 
         for (var i = 0; i < list.length - 1; i++) {
+            var month = list[i] % 12;
+            month = month == 0 ? 12 : month;
+            var year = this.props.beginYear + Math.floor((list[i] - 1) / 12);
+            var time = month + "/" + year;
+
+
             this.listButton.push(
                 <div style={{ flex: list[i + 1] - list[i], display: "flex", flexDirection: "column" }}>
                     < img key={i}
                         src={this.state.icon}
                         width={20}
                         height={20}
-                        onClick={() => this.onImageClick(i)
-                        }>
+                        onClick={() => this.onImageClick(i)}                    >
                     </img >
                 </div>)
         }

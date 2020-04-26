@@ -1,8 +1,12 @@
 
 import React from "react";
 import "../index.css";
+import { colorNormalText, colorBGTitle, colorTextInBlack } from "../colorDefine"
 
 import ProgressBarAnimated from "./progressBarAnimated";
+import strs from "../stringDefine"
+
+import LocationIcon from "@material-ui/icons/LocationSearching";
 
 const CSharpText = "C# - Unity";
 const CSharpSkillValue = 87;
@@ -49,8 +53,20 @@ const groupStyle = {
 const elementStyle = {
     fontFamily: "font1",
     fontSize: 14,
-    padding: 5
+    padding: 5,
+    color: colorNormalText
+}
 
+const skillStyle = {
+    fontFamily: "font1",
+    fontSize: 22,
+    padding: 5,
+    background: colorBGTitle,
+    borderRadius: "50%",
+    color: colorTextInBlack,
+    alignSelf: "center",
+    padding: 20,
+    marginTop: 40,
 }
 
 function groupLeft() {
@@ -128,12 +144,20 @@ function EnglishSkill() {
 }
 
 
+function TitleSkill() {
+    return (
+        <p style={skillStyle}>{strs.skill_title}</p>
+    )
+}
+
+
 
 
 export default () => {
     return (
         <div style={containerStyle}>
             {groupLeft()}
+            {TitleSkill()}
             {groupRight()}
         </div>
     );

@@ -5,6 +5,7 @@ import "./index.css";
 import GroupName from "./component/groupName"
 import LeftLayout from "./component/leftLayout"
 import CenterLayout from "./component/centerLayout"
+import ScrollUpButton from "react-scroll-up-button"
 
 
 
@@ -35,6 +36,9 @@ class App extends React.Component {
           {this.state.showLeft ? LeftLayout() : ""}
           {CenterLayout()}
         </div>
+        <ScrollUpButton
+
+          ShowAtPosition={400} />
       </div>)
 
   }
@@ -49,8 +53,5 @@ class App extends React.Component {
     }
   }
 }
-
-
-
 
 export default App;

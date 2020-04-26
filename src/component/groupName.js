@@ -2,14 +2,36 @@ import React from "react";
 import RoundImage from "react-rounded-image";
 import MyAvatar from "../image/avatar.jpg";
 import "../index.css";
+import catGif from "../image/cat.gif"
 
-const name = "Tran Thai Ngoc";
-const position = "Developer";
+import { colorName, colorLightBlue } from "../colorDefine";
+
+import strs from "../stringDefine"
+
+
+function AboutMe() {
+    return (<p style={aboutMeStyle}
+        dangerouslySetInnerHTML={{ __html: strs.about_me }} />);
+}
+
 
 function groupInfo() {
     return (
         <div style={containerStyle}>
+            <div style={{
+                zIndex: -1,
+                position: "absolute",
+                left: 0,
+                right: 0,
+                display: "flex",
+                background: colorLightBlue,
+                justifyContent: "center"
+
+            }}>
+                <img height={100} src={catGif} />
+            </div>
             {avatar()}
+            {AboutMe()}
             {nameTitle()}
         </div>
     );
@@ -27,9 +49,23 @@ function avatar() {
 }
 function nameTitle() {
     return (<div style={nameStyle}>
-        <h3 style={textNameStyle}>{name}</h3>
-        <h3 style={textPositionStyle}>{position}</h3>
+        <h3 style={textNameStyle}>{strs.my_name}</h3>
+        <h3 style={textPositionStyle}>{strs.my_job}</h3>
     </div>);
+}
+
+
+const aboutMeStyle = {
+    fontSize: 12,
+    marginTop: 100,
+    marginLeft: 170,
+    maxWidth: 600,
+    position: "absolute",
+    textAlign: "justify",
+    paddingTop: 5,
+    paddingLeft: 10,
+    paddingRight: 10,
+    color: "#000"
 }
 
 
@@ -37,9 +73,9 @@ const panelStyle = {
     position: "absolute",
     left: 0,
     right: 0,
-    height: 100,
-    zIndex: -1,
-    backgroundColor: "#99ccff",
+    height: 200,
+    zIndex: -1
+
 };
 
 
@@ -52,7 +88,7 @@ const containerStyle = {
 
 const nameStyle = {
     marginTop: 10,
-    marginRight: 40
+    marginRight: 20
 };
 
 
@@ -63,12 +99,14 @@ const avatarStyle = {
 
 
 const textNameStyle = {
-    color: "#ff33ff",
+    color: colorName,
     fontFamily: "font1",
+    whiteSpace: "nowrap"
 }
 const textPositionStyle = {
-    color: "#ff33ff",
-    fontFamily: "font1"
+    color: colorName,
+    fontFamily: "font1",
+    whiteSpace: "nowrap"
 }
 
 
