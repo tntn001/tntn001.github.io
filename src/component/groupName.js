@@ -1,6 +1,6 @@
 import React from "react";
 import RoundImage from "react-rounded-image";
-import MyAvatar from "../image/avatar.jpg";
+import MyAvatar from "../image/avatar.png";
 import "../index.css";
 import catGif from "../image/cat.gif"
 

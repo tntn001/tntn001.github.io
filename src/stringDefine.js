@@ -1,6 +1,6 @@
 export default {
 
-    my_name: "Tran Thai Ngoc",
+    my_name: "TRAN THAI NGOC",
     my_job: "Developer",
     skill_title: "Skills",
     experience_title: "Working Experience",
