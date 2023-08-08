@@ -34,7 +34,7 @@ export default class JoyWorkOne extends React.Component {
                 flexDirection: "row",
             }}>
                 <ImageViewer list={[trollImg]} width={150} />
-                <YouTube videoId="iCSe3uM_MdY"
+                <YouTube videoId="K-fLIdFZOws"
                     opts={{ width: "200", height: "150" }} />
             </div>
 

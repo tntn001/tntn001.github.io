@@ -15,6 +15,8 @@ import Onetech from "./onetech"
 import TapLifeOne from "./taplife1"
 import TapLifeTwo from "./taplife2"
 import TapLifeThree from "./taplife3"
+import SpiritBombOne from "./spiritbomb1"
+import SpiritBombTwo from "./spiritbomb2"
 import strs from "../stringDefine"
 import { colorNormalText, colorTextInBlack, colorBGTitle } from "../colorDefine"
 
@@ -70,6 +72,8 @@ function Center() {
             <TapLifeOne />
             <TapLifeTwo />
             <TapLifeThree />
+            <SpiritBombOne/>
+            <SpiritBombTwo/>
             <VerticalTimelineElement
                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                 icon={<StarIcon />}

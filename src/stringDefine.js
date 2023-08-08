@@ -14,6 +14,7 @@ export default {
     onetech_com: "Onetech",
     army_com: "VietNam People's Army",
     taplife_com: "TapLife Technology",
+    spirit_bomb: "Spirit Bomb Studios",
     freelancer: "Freelancer",
 
     joy_1_date: "10/2013-02/2014",
@@ -60,9 +61,20 @@ export default {
     taplife_task_2_2: "Develop social app create or join into events.",
     taplife_task_2_3: "Write UI custom library for android.",
 
-    taplife_date_3: "11/2019-Now",
+    taplife_date_3: "11/2019-04/2020",
     taplife_regency_3: "Android team leader + React Native developer",
     taplife_task_3: "Develop app connect tourist and tour guide with Redux architecture.",
+
+    spiritbomb_date_1: "07/2020-06/2023",
+    spiritbomb_regency_1: "Unity developer + Project Manager",
+    spiritbomb_task_1_1: "Develop and maintain game Atlantis Invader",
+    spiritbomb_task_1_2: "Maintain game Sky Champ",
+
+    spiritbomb_date_2: "04/2021-06/2023",
+    spiritbomb_regency_2: "Unity developer + Tech lead",
+    spiritbomb_task_2_1: "Develop hyper casual game",
+    spiritbomb_task_2_2: "Write custom editor support designer",
+    spiritbomb_task_2_3: "Support developer team",
 
 
     birthday: "07/10/1992",
@@ -74,7 +86,7 @@ export default {
 
     career_obj_1: "Create amazing games.",
     career_obj_2: "Improve knowledge and programming skills.",
-    career_obj_3: "Become a project management.",
+    career_obj_3: "Become a professional developer.",
     hobbies_1: "Music: rap, indie...  ♬♫♪.",
     hobbies_2: "Sport: badmington, gym.",
     hobbies_3: "Traveling.",

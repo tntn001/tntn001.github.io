@@ -33,7 +33,7 @@ export default class JoyWorkOTwo extends React.Component {
                 flexDirection: "row",
             }}>
                 <ImageViewer list={[captainStrike]} width={150} />
-                <YouTube videoId="uX_B-74GwIE"
+                <YouTube videoId="3EOPgxApQSU"
                     opts={{ width: "200", height: "150" }} />
             </div>
 
